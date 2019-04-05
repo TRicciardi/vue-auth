@@ -94,7 +94,7 @@ module.exports = function () {
                 __transitionRedirectType = 401;
                 cb.call(this, authRedirect);
             }
-            else if ((routeAuth.constructor === Array || __utils.isObject(routeAuth)) && ! this.check(routeAuth))) {
+            else if ((routeAuth.constructor === Array || __utils.isObject(routeAuth)) && ! this.check(routeAuth)) {
                 __transitionRedirectType = 403;
                 cb.call(this, forbiddenRedirect);
             }
